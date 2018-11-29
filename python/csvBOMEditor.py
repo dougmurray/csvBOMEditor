@@ -17,7 +17,10 @@ deleteAllThese = ['Device', 'Package', 'Description', 'INTERNALCLK', 'MANUF', 'T
 
 # Delete unnecessary attributes
 for i, element in enumerate(deleteAllThese):
-	del df[element]
+	try:
+		del df[element]
+	except KeyError:
+		print("No ", element)
 
 # Print and export back to csv file
 print("After: ", df)
