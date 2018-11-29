@@ -9,7 +9,7 @@ import pandas as pd
 
 # Using pandas to import and manipulate csv files is far superior than csv module
 filename = sys.argv[1]
-df = pd.read_csv(filename, header=0, delimiter=',')
+df = pd.read_csv(filename, header=0, delimiter=';')
 print("Before: ", df)
 
 # All attributes to be removed from csv file
