@@ -13,7 +13,7 @@ df = pd.read_csv(filename, header=0, delimiter=',')
 print("Before: ", df)
 
 # All attributes to be removed from csv file
-deleteAllThese = ['Device', 'Package', 'Description', 'MANUF', 'TOLERANCE', 'TYPE', 'POWER', 'COLOR', 'VALUE', 'VOLTAGE']
+deleteAllThese = ['Device', 'Package', 'Description', 'INTERNALCLK', 'MANUF', 'TOLERANCE', 'TYPE', 'POWER', 'COLOR', 'VALUE', 'VOLTAGE']
 
 # Delete unnecessary attributes
 for i, element in enumerate(deleteAllThese):
